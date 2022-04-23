@@ -7,13 +7,10 @@ os.system ("cls")
 
 n = int ( input( 'Введите число N \n'))
 
-
 mas = []
 for i in range(n):
    mas.append(random.randint(-n, n))
 print(mas)
 
-f = open(D:\Обучение\Работа в Git\Work_Python\17\file.txt)
-for line in f:
-    line
-
+handle = open("1.txt")
+handle = open(r"C:\Users\mike\py101book\data\1.txt", "r")
