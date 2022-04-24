@@ -12,5 +12,8 @@ for i in range(n):
    mas.append(random.randint(-n, n))
 print(mas)
 
-handle = open("1.txt")
-handle = open(r"C:\Users\mike\py101book\data\1.txt", "r")
+path = 'file.txt'
+data = open(path, 'r')
+for line in data:
+      print (line)
+data.close()
