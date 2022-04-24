@@ -10,12 +10,12 @@ n = int ( input( 'Введите число N \n'))
 mas = []
 for i in range(n):
    mas.append(random.randint(-n, n))
-print(mas)
+print('Это список из N элементов = ', mas)
 
 m = []
 for j in range(n):
    m.append(random.randint(1,n))
-print (m)
+print (' Это номера позиций. Они записываются в файл', m)
 
 file = open('D:\\Обучение\\Работа в Git\\Work_Python\\17\\file.txt', "w")
 for item in m: file.write('%s\n' % item) 
@@ -24,13 +24,14 @@ file.close()
 temp = 0
 sum = 0
 file = open('D:\\Обучение\\Работа в Git\\Work_Python\\17\\file.txt', 'r')
-for j in file:
-   #for i in mas:
-      temp = j
-      print (temp)
-      sum = mas[j]      
-      print (sum)
-      #temp = mas(i)**2
-      #sum = sum + temp
-      #print (sum)
+print(' Это номера позиций. Они прочитаны из файла',file)
+
+for i in range(len(m)):
+   k = int(m[i])
+   k1=k-1
+   temp = mas[k1]
+   sum = temp**2
+   print('Это цифра на выбранной позиции =', temp, 'и ее произведение =', sum)
+
+
 
