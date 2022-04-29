@@ -10,6 +10,7 @@ k = int(input('Укажите степень K \n'))
 s = ' * (x**'
 s1 = ')'
 s2 = ' * '
+s3 = 'x'
 
 mas = []
 for i in range(12):
@@ -35,7 +36,7 @@ mas[1] = s
 mas[2] = k
 mas[3] = s1
 mas[6] = s2
-mas[7] = k
+mas[7] = s3
 mas[10] = ' = '
 mas[11] = 0
 
