@@ -111,9 +111,19 @@ s6 = sum3 + sum6
 mas2 = mas
 
 mas2[0] = s0
-mas2[5] = s3
-#mas2[10] = s6
-print(mas2)
+if s3 < 0:
+    mas2[4] = ' - '
+    mas2[5] = -s3
+if s3 >0:
+    mas2[4] = ' + '
+    mas2[5] = s3
+
+if s6 < 0:
+    mas2[8] = ' - '
+    mas2[9] = -s6
+if s6 > 0:
+    mas2[8] = ' + '
+    mas2[9] = s6
 
 z7 = ''.join(str(k) for k in mas2)
 print()
