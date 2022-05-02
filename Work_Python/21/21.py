@@ -12,10 +12,10 @@ os.system('cls')
 count = 0
 mas = []
 
-text = (input('Введите символы "q", "w", "e" в том порядке. в котором их нужно найти \n'))
+text = (input('Введите любые символы или цифры в том порядке. в котором их нужно найти \n'))
 words = text.split()
-print(words)
-while count < 20:
+
+while count < 10:
     for i, word in enumerate(map(list, words)):
         random.shuffle(word)
         words[i] = ''.join(word)
@@ -26,12 +26,21 @@ print('Это рандомный список', mas)
 
 temp = 0
 mas1 =[]
+
 for j in mas:
-    if j == words:
-        temp = temp + 1
-        if temp > 1:
-            mas1.append(j)
-print(mas1)
+    if j == text:
+        mas1.append(temp)
+    temp = temp + 1
+
+if len(mas1) > 1:
+    del mas1[0]
+    print('Значение', text, 'имеет второе и следующие вхождения на индексах', mas1)
+else:
+    print('Значение', text, 'имеет второе и следующие вхождения на индексах', -1)
+     
+    
+    
+
 
 
 
