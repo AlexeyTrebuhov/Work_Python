@@ -6,19 +6,10 @@ os.system('cls')
 
 mas = []
 for i in range(15):
-   mas.append(random.randint(2, 15))
-print('Это рандомный список =', mas)
+   mas.append(random.randint(1, 15))
+print('Рандомный список =', mas)
 
-sum = 0
-mas1 = []
-k = 0
-
-for j in mas:
-   k = int(mas[j])
-   print(k)
-   if k % 2 > 0:
-      sum = sum + k
-      mas1.append(k)
-
-print(mas1)
-print(sum)
+mas1 = mas[::2]
+print('Числа на нечетных позициях =',mas1)
+print ('Сумма элементов = ', end ='' )
+print(sum(mas1))
