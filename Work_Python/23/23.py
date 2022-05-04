@@ -3,7 +3,6 @@
 
 import random
 import os
-from tkinter import Y
 os.system ('cls')
 
 mas = []
