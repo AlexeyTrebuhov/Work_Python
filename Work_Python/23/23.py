@@ -7,24 +7,34 @@ from tkinter import Y
 os.system ('cls')
 
 mas = []
-for i in range(14):
+for i in range(15):
    mas.append(random.randint(1, 14))
 print('Рандомный список =', mas)
 
 k = len(mas)
-temp = k-1
-sum = 0
+max = k-1
 proizv = 0
+mas1 = []
 
-while k > 0:
-    x = int(mas[0])
-    y = int(mas[temp])
+while k >= 2:
+   
+   x = int(mas[0])
+   y = int(mas[max])
+   proizv = x * y
+   mas1.append(proizv)
+            
+   del mas[max],mas[0]
+   k = k - 2
+   max = k - 1
+ 
+if k == 1:
+   z = int(mas[0])
+   proizv = z ** 2
+   mas1.append(proizv)
+  
+   del mas[0]
+
+print('Произведения крайних пар массива = ', mas1)
+
+   
     
-    k = temp - 1
-    proizv = x * y
-    
-    sum = sum + proizv
-    del mas[0],mas [k]
-    print(x, y,  'Произведение = ', proizv, 'Сумма = ', sum, 'Остатки массива = ', mas,)
-    k = k - 2
-    temp = k + 1
