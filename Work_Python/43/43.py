@@ -6,42 +6,39 @@ import random
 from tkinter import X
 os.system('cls')
 
+print('Дублирующиеся цифры в процессе работы меняем на 404')
 mas = []
-for j in range(20):
-    mas.append(random.randint(0, 10))
-print('Исходный список = ',mas)
+for j in range(25):
+    mas.append(random.randint(0,9))
+print('Исходный список =  ',mas)
 print()
 
-masout = mas
-poz = 0
-prob = 1
-         
-for i in mas:
-    
-    for j in mas:
-        if j == i:
-            poz = poz + 1 
-        if poz > 2:    
-            y = i   
-    
-    print('Повторяется =', y,'повторов =', poz,'удаляем его')
-   
-    r = len(masout)
-    while r > 1:
-        if i in masout:
-            masout.remove(y)
-        r = r - 1
-    mas = masout
-   
+y = mas[0]  
+count = 0
+start = 1
 
-    print('Список после удаления = ', mas)
-    print()
-   
-    poz = 0
-   
+while start > 0:
+    for i in mas:
+            for j in mas:   
+                if i == j:
+                    count = count + 1  #Здесь находим. что внутри списка число i находится более 2 раз
+            
+            # Как только узнали, что число i дублируется, то запускается перебор массива с условием:
+            # число = числу, если оно не равно i ( != i). Иначе новое имя( 404) для числа в массиве 
+            if count > 1:                
+                if i in mas:
+                    new_name = 404
+                    mas = [name if name != i else new_name for name in mas]
+                    print('Число',i, 'повторяется',count,'раз')
+                
+            for w in mas:
+                if w == 404:
+                    mas.remove(404)
+                    #print('Список после чистки',mas)
+            count = 0
+    start = 0
 
-print('Список после удаления = ', masout)
 print()
-      
-    
-   
+print('Cписок без дублей = ', mas)  
+print()
+
