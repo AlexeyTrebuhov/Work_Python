@@ -55,33 +55,37 @@ masout = []
 for x, y in dic1: # разделяем словарь на два списка
     masoutx.append(x) # это индексы максимальной длины последовательности
     masouty.append(y) # это цифры максимальной длины последовательности
-print('masoutx',masoutx)
-print('masouty', masouty)
-print()
-
-masout.append(masouty[0])   
+print('начальное masoutx',masoutx)
+print('начальное masouty', masouty)
+ 
 temp = masouty[0] 
 stopx = 1
 stopy = 1
+print('начальное число',temp,'длина', zmax,masout)
+print()
 
+sum = 0
+while sum < l:
+    print('masoutx', masoutx[sum], 'masouty', masouty[sum])
+    if masoutx[sum] < zmax and  masouty[sum] < temp:
+        masout.append(masouty[sum])        
+        
+     
+    sum = sum + 1
+    #temp = masouty[0]
+    #zmax = zmax - 1
+        
+        
+       
+   
+   
+    print( masoutx)
+    print( masouty) 
+    print('начальное число', temp, 'длина', zmax)
+    print('masout',masout)
+    print()
 
-while stopx > 0:
-        if masoutx[0] == zmax:
-            del masoutx[0]
-            del masouty[0]    
-        stopx = 0  
-
-
-
-
-print('masoutx', masoutx)
-print('masouty', masouty)
-    #if masoutx[0] == zmax and masouty[0] > temp:
-        #del masoutx[0]
-        #del masouty[0]
-    
-    #print('masoutx = ', masoutx, 'masouty', masouty, 'masout', masout, 'zmax',zmax)
-    #masout.append(masouty[0])
+ 
     
    
         
