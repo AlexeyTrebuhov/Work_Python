@@ -9,7 +9,7 @@ import random
 import os
 os.system('cls')
 
-print('На столе лежит 2021 конфета.')
+print('На столе лежит 200 конфет. 2021 - это избыточно для проверки алгоритма')
 
 sum = 200
 hod = int(random.randint(1,8))
@@ -17,7 +17,7 @@ hod = int(random.randint(1,8))
 
 if hod % 2 > 0:
     sum = sum - 3
-    x0 = int(input('Первый ход сделал бот. Он взял 4 конфеты. На столе осталось 2017 конфет.Сколько конфет возъмете ? \n'))
+    x0 = int(input('Первый ход сделал бот. Он взял 3 конфеты. На столе осталось 196 конфет.Сколько конфет возъмете ? \n'))
     sum = sum - x0 # взяли конфеты. ход бота
 
     while sum >= 29:       
@@ -37,22 +37,18 @@ if hod % 2 == 0:
     x0 = 0
 
     while sum > 29:  
-        ost1 = sum % 57
+        ost1 = sum % 28
                
-        if ost1 == 1:
-            ost = 28  # столько конфет возьмет бот
-            print('сработал переход', ost,x0)
+        if ost1 == 0:
+            ost = 27  # столько конфет возьмет бот
+            #print('сработал переход', ost,x0)
             sum1 = sum - ost # бот взял конфеты    
             if sum1 <= 28:
                 print('Последние', sum, 'конфет достались боту. Он выиграл')
         
         
         else:
-            if ost1 > 29:
-                ost = 57 - ost1                 
-            else:
-                ost = 28 - ost1
-            
+            ost = ost1 - 1            
             sum1 = sum - ost  # бот взял конфеты
             if sum1 <= 28:
                 print('Последние', sum, 'конфет достались боту. Он выиграл')
@@ -64,7 +60,7 @@ if hod % 2 == 0:
         x0 = x1
         count = count + 1
       
-        print('count',count, 'ost',ost)
+        #print('count',count, 'ost',ost)
 
     if 0 < sum <= 28 and count % 2 == 0:
         print('Последние',sum,'конфет достались боту. Он выиграл')
