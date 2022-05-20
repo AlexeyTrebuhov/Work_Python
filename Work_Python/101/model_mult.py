@@ -8,5 +8,5 @@ def init(a, b):
     y = b
 
 
-def mult():
+def do_it():
     return x * y
