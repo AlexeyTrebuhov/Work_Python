@@ -2,18 +2,18 @@ from datetime import datetime as dt
 
 def temperature_logger(data):
     time = dt.now().strftime('%H:%M')
-    with open('log.csv','a') as file:
-        file.write('{}; temperature;{}'
+    with open('D:\\Обучение\\Работа в Git\\Work_Python\\102\\log.csv', 'a') as file:
+        file.write('{}; temperature;{}\n'
                         .format(time,data))
 
 def pressure_logger(data):
     time = dt.now().strftime('%H:%M')
-    with open('log.csv','a') as file:
-        file.write('{}; pressure;{}'
+    with open('D:\\Обучение\\Работа в Git\\Work_Python\\102\\log.csv', 'a') as file:
+        file.write('{}; pressure;{}\n'
                         .format(time,data))
 
-def win_speed_logger(data):
+def wind_speed_logger(data):
     time = dt.now().strftime('%H:%M')
-    with open('log.csv','a') as file:
-        file.write('{}; win_speed;{}'
+    with open('D:\\Обучение\\Работа в Git\\Work_Python\\102\\log.csv', 'a') as file:
+        file.write('{}; wind_speed;{}\n'
                         .format(time,data))
