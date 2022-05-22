@@ -16,7 +16,7 @@ while n >0:
     n = n-1
 
 list1 = list(map(lambda x,y: (3**x)*y, list1, list2))
-print(list1)
+print(*list1)
 
 
 
