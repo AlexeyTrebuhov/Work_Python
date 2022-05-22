@@ -6,9 +6,6 @@ import os
 os.system("cls")
 
 n = int(input('Введите число N \n'))
-
-list1 = [i for i in range(0, n)]
-list1 = list(map(lambda x: 3*x + 1, list1))
-list2 =list(enumerate(list1))
+list2 = list(enumerate(map(lambda x: 3*x + 1, [i for i in range(0, n)])))
 del list2[0]
 print(list2)
