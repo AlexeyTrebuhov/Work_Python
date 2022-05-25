@@ -6,7 +6,6 @@ os.system('cls')
 import random
 
 n = int(input('Введите число =  '))
-
 mas = []
 for i in range(n*4):
    mas.append(random.randint(0, 20))
@@ -34,3 +33,5 @@ for i in range(len(mas)):
         x = temp
         i = i + 1
 print('Это неповторяющийся список',list)
+
+
