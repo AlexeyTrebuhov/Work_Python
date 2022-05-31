@@ -35,6 +35,7 @@ def click(row, col):        # ставим крестик и считаем
         field[row][col]['background'] = '#7CF5E9'
         global cross_count
         cross_count += 1
+        field[15][20]['text'] = cross_count
         #check_win('X')   # проверка на победу по символу Х
         if game_run and cross_count < 289:
             computer_move()  # если поле не заполнено, ходит комп
@@ -120,14 +121,18 @@ new_button.grid(row=16, column=17, columnspan=15, sticky='nsew')
 
 text_button = Button(text='Правила игры', font=(
     'times', 14, 'bold'), background='#9CD8F0')
-text_button.grid(row=0, rowspan=2, column=17, columnspan=5, sticky='nsew')
+text_button.grid(row=0, rowspan=2, column=17, columnspan=4, sticky='nsew')
 
 text_button = Button(text='Не дайте компьютеру \n поставить три фишки \nв ряд или \n по диагонали\n\nВаш ход', font=(
     'times', 12, 'bold'), background='#9CD8F0')
-text_button.grid(row=2, rowspan=4, column=17, columnspan=5, sticky='nsew')
+text_button.grid(row=2, rowspan=4, column=17, columnspan=4, sticky='nsew')
 
-text_button = Button(text='', font=(
+text_button = Button(text = '', font=(
     'times', 12, 'bold'), background='#9CD8F0')
-text_button.grid(row=6, rowspan=10, column=17, columnspan=5, sticky='nsew')
+text_button.grid(row=6, rowspan=9, column=17, columnspan=4, sticky='nsew')
+
+text_button = Button(text='Номер хода', font=(
+    'times', 12, 'bold'), background='#9CD8F0')
+text_button.grid(row=15, rowspan=1, column=17, columnspan=3, sticky='nsew')
 
 root.mainloop()
