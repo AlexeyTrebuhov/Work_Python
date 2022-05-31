@@ -122,7 +122,7 @@ text_button = Button(text='Правила игры', font=(
     'times', 14, 'bold'), background='#9CD8F0')
 text_button.grid(row=0, rowspan=2, column=17, columnspan=5, sticky='nsew')
 
-text_button = Button(text='Не дайте компьютеру \n поставить три фишки \nв ряд или \n по диагонали', font=(
+text_button = Button(text='Не дайте компьютеру \n поставить три фишки \nв ряд или \n по диагонали\n\nВаш ход', font=(
     'times', 12, 'bold'), background='#9CD8F0')
 text_button.grid(row=2, rowspan=4, column=17, columnspan=5, sticky='nsew')
 
