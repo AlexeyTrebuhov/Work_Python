@@ -7,42 +7,55 @@ class Main(Frame):
         self.build()
 
     def build(self):
-        self.formula = "0"
+        self.formula = "0" # исходное значение на табло
         self.lbl = Label(text=self.formula, font=(
-            "Times New Roman", 21, "bold"), bg="#000", foreground="#FFF")
-        self.lbl.place(x=11, y=50)
+            "https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@1,100&family=Secular+One&display=swap" , 21, "bold"), bg="#72cced", foreground="#0b0514")
+        self.lbl.place(x=2, y=10)
 
         btns = [
-            "C", "DEL", "*", "=",
-            "1", "2", "3", "/",
-            "4", "5", "6", "+",
-            "7", "8", "9", "-",
-            "(", "0", ")", "X^2"
+            "%", "CE", "C", "⌫",
+            "1/x", "x²", "√x", "÷",
+            "7", "8", "9", "×",
+            "4", "5", "6", "-",
+            "1", "2", "2", "+",
+            "+/-", "0", ".", "="
         ]
 
-        x = 10
-        y = 140
+        x = 3 # отступ блока кнопок слева
+        y = 70 # отступ блока кнопок сверху
         for bt in btns:
             def com(x=bt): return self.logicalc(x)
             Button(text=bt, bg="#FFF",
-                   font=("Times New Roman", 15),
+                   font=("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@1,100&family=Secular+One&display=swap", 10),
                    command=com).place(x=x, y=y,
-                                      width=115,
-                                      height=79)
-            x += 117
-            if x > 400:
-                x = 10
-                y += 81
+                                      width=35, # ширина клавиш
+                                      height=35) # высота клавиш
+            x += 36   # расстояние от начала первой кнопки до начала следующей
+            if x > 144: # условие отступа при достижении правого поля
+                x = 3  # отступ справа ( для нового ряда)
+                y += 36  # отступ сверху ( для нового ряда)
 
     def logicalc(self, operation):
         if operation == "C":
             self.formula = ""
-        elif operation == "DEL":
+        elif operation == "⌫":
             self.formula = self.formula[0:-1]
-        elif operation == "X^2":
+        elif operation == "x²":
             self.formula = str((eval(self.formula))**2)
+        elif operation == "1/x":
+            self.formula = str(eval(1/(self.formula)))
+
+
+
+
         elif operation == "=":
             self.formula = str(eval(self.formula))
+      
+
+
+
+
+
         else:
             if self.formula == "0":
                 self.formula = ""
@@ -57,8 +70,8 @@ class Main(Frame):
 
 if __name__ == '__main__':
     root = Tk()
-    root["bg"] = "#000"
-    root.geometry("485x550+200+200")
+    root["bg"] = "#72cced" # Цвет фона
+    root.geometry("148x287-50-100") # Размер внешний и место появления программы на мониторе
     root.title("Калькулятор")
     root.resizable(False, False)
     app = Main(root)
