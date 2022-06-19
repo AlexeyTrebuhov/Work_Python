@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="082c9575-aa7a-47b0-bc15-7e74bbafb1f8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/VSWorkspaceState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Работа в Git/FileContentIndex/b5a13459-25b4-4052-96af-7e6714bcdff7.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Работа в Git/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/Работа в Git/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Работа в Git/v17/workspaceFileList.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/Работа в Git/v17/workspaceFileList.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson3/File-number-one" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work C#" beforeDir="false" afterPath="$PROJECT_DIR$/../Work C#" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work_Python/106/106.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Work_Python/106/106.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work_Python/217" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work_Python/218/log2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Work_Python/218/log2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../log.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../log.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2AXPnRBI2suO42SnSLuIqr3wX48" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Обучение/Работа в Git/Java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Работа в Git" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Работа в Git" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="082c9575-aa7a-47b0-bc15-7e74bbafb1f8" name="Changes" comment="" />
+      <created>1655153124908</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655153124908</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
